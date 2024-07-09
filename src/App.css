@@ -1,0 +1,31 @@
+main {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.boxes{
+  display:grid;
+   grid-template-columns: repeat(3,1fr);
+  gap:10px;
+  width:fit-content;
+}
+.box{
+  height:50px;
+  width:50px;
+  border:1px solid black;
+  transition:all 0.3s ease-in-out;
+  cursor:pointer;
+}
+.hidden{
+  visibility:hidden;
+}
+.visible{
+  visibility:visible;
+}
+.selected{
+  background-color:green;
+  transition:all 0.3s ease-in-out;
+}
+.deactivating{
+  cursor:not-allowed;
+}
